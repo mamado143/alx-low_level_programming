@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 /**
  * main - prints the numbers from 1 to 100, followed by a new line
@@ -26,6 +27,10 @@ int main(void)
 		else
 		{
 			printf("%d ", i);
+		}
+		if (i != 100)
+		{
+			printf(" ");
 		}
 	}
 	printf("\n");
