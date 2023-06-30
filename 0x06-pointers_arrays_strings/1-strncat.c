@@ -1,31 +1,21 @@
 #include <stdio.h>
 
-/*
- * _strncat - Concatenates n characters from src to dest
+/**
+ * _strncat - Concatenates at most n characters from src to dest
  * @dest: Pointer to the destination string
  * @src: Pointer to the source string
- * @n: Maximum number of characters to concatenate
+ * @n: Maximum number of characters to concatenate from src
  *
- * Return: Pointer to the resulting string
+ * Return: Pointer to the resulting string dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int charCount = 0;
+	char *destStart = dest;
 
 	while (*dest)
-	{
 		dest++;
-	}
-	while (*src && charCount < n)
-	{
-		putchar(*dest++ = *src++);
-		charCount++;
-	}
-	if (charCount >= n)
-	{
-		putchar('\0');
-	}
+	while (*src && n--)
+		*dest++ = *src++;
 	*dest = '\0';
-	return (dest);
+	return (destStart);
 }
-
