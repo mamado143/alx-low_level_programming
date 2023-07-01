@@ -1,12 +1,12 @@
 #include "main.h"
 /**
-  * _strncpy - copies a string
-  * @dest: Pointer to the destination string
-  * @src: Pointer to the source string.
-  * @n: Maximum number of characters to copy.
-  * Return: Pointer to the destination string
+  *_strncpy - copies a string
+  *@dest: Pointer to the destination string
+  *@src: Pointer to the source string.
+  *@n: Maximum number of characters to copy.
+  *Return: Pointer to the destination string
   */
-char* _strncpy(char* dest, char* src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 
