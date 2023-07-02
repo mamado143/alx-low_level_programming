@@ -21,10 +21,12 @@ int isDelimiter(char c)
 {
 	int i = 0;
 	char delimiter[] = "\t\n,.!?\"(){}";
-	
+
 	for (i = 0; delimiter[i] != '\0'; i++)
+	{
 		if (c == delimiter[i])
 			return (1);
+	}
 	return (0);
 }
 
@@ -44,7 +46,7 @@ char *cap_string(char *s)
 			foundCapDelemiter = 1;
 		else if (isLower(*s) && foundCapDelemiter)
 		{
-			*s -= 32;
+			*s = *s - 'a' + 'A';
 			foundCapDelemiter = 0;
 		}
 		else
