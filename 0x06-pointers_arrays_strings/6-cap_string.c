@@ -38,21 +38,23 @@ int isDelimiter(char c)
 char *cap_string(char *s)
 {
 	char *ptr = s;
-	int foundCapDelemiter = 1;
+	int foundCapDelimiter = 1;
 
-	while (*s)
+	while (*s != '\0')
 	{
 		if (isDelimiter(*s))
-			foundCapDelemiter = 1;
-		else if (isLower(*s) && foundCapDelemiter)
+			foundCapDelimiter = 1;
+		else if (isLower(*s) && foundCapDelimiter)
 		{
 			*s = *s - 'a' + 'A';
-			foundCapDelemiter = 0;
+			foundCapDelimiter = 0;
 		}
 		else
-			foundCapDelemiter = 0;
+			foundCapDelimiter = 0;
 		s++;
 	}
 	return (ptr);
 }
+
+
 
