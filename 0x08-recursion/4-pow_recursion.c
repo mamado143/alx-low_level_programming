@@ -5,7 +5,7 @@
   * @y: is an integer.
   * Return: returns recurtion.
   */
-int _pow_recursion(int x, int y)i
+int _pow_recursion(int x, int y)
 {
 	if (y < 0)
 	{
