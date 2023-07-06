@@ -1,4 +1,4 @@
-#int "main.h"
+#include "main.h"
 /**
   *_pow_recursion - funciton to return the pow of integer.
   * @x: is an integer.
