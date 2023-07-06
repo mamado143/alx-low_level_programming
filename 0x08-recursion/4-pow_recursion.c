@@ -1,4 +1,11 @@
-int _pow_recursion(int x, int y)
+#int "main.h"
+/**
+  *_pow_recursion - funciton to return the pow of integer.
+  * @x: is an integer.
+  * @y: is an integer.
+  * Return: returns recurtion.
+  */
+int _pow_recursion(int x, int y)i
 {
 	if (y < 0)
 	{
