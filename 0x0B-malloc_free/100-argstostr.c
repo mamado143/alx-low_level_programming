@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
-/*i*
+/**
  * argstostr - Concatenates all the arguments of a program.
  * @ac: The argument count.
  * @av: The argument vector.
@@ -19,8 +19,8 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j]; j++)
-				total_length++;
-		total_length++; 
+			total_length++;
+		total_length++;
 		concat = malloc((total_length + 1) * sizeof(char));
 		if (concat == NULL)
 			return (NULL);
@@ -30,10 +30,10 @@ char *argstostr(int ac, char **av)
 		{
 			for (j = 0; av[i][j]; j++, k++)
 				concat[k] = av[i][j];
-			concat[k] = '\n'; // Add the newline character
+			concat[k] = '\n';
 			k++;
 		}
-		concat[k] = '\0'; // Add the null-terminating character
+		concat[k] = '\0';
 	}
 	return (concat);
 }
