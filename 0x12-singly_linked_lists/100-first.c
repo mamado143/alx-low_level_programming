@@ -3,7 +3,6 @@
   * first - Function to be excuteted before main.
   * This function is executed automatically.
   */
-
 void first(void) __attribute__ ((constructor));
 void first(void)
 {
