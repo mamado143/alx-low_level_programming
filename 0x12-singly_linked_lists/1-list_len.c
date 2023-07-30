@@ -11,9 +11,6 @@ size_t list_len(const list_t *h)
 
 	while (h)
 	{
-		if (!h->len)
-			printf("[0] (nil)");
-		else
 		node_count++;
 		h = h->next;
 	}
