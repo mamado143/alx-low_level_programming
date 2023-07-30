@@ -14,8 +14,8 @@ size_t list_len(const list_t *h)
 		if (!h->len)
 			printf("[0] (nil)");
 		else
-		h = h->next;
 		node_count++;
+		h = h->next;
 	}
 	return (node_count++);
 }
