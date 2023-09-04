@@ -14,10 +14,10 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return (0);
+		return (1);
 	}
 	num = atoi(argv[1]);
-	return (0);
+	result = 0;
 	if (num < 0)
 	{
 		printf("Error\n");
