@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	result = 0;
 	if (num < 0)
 	{
-		printf("Error\n");
+		printf("0\n");
 		return (0);
 	}
 	for (i = 0; i < 5 && num >= 0; i++)
