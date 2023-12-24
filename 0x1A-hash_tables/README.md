@@ -1,6 +1,5 @@
 
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-
+# Alx Hash Table Project
 General
 
 What is a hash function
