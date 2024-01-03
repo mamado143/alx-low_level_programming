@@ -1,6 +1,6 @@
 # Alx program From Helbeton School
 # Alx Hash Table Project
-General
+General Tasks
 
 What is a hash function
 What makes a good hash function
