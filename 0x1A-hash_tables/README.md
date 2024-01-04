@@ -1,7 +1,7 @@
 # Alx program From Helbeton School
 # Alx Hash Table Project
 General Tasks
-
+Read these instructions
 What is a hash function
 What makes a good hash function
 What is a hash table, how do they work and how to use them
